@@ -9,8 +9,143 @@
   <title>First HTML file</title>
   <!-- The title tag within the head tag gives the tab in the browser a name.-->
 </head>
+
 <body>
-  
+  <!-- Headings (h1 - h6)-->
+  <h1>Heading One</h1>
+  <h2>Heading Two</h2>
+  <h3>Heading Three</h3>
+  <h4>Heading Four</h4>
+  <h5>Heading Five</h5>
+  <h6>Heading Six</h6>
+  <!-- Paragraphs (p1 - p6)-->
+  <p>
+    Lorem ipsum dolor sit amet, consectetur <strong>adipisicing elit,
+        sed do</strong> eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis <em>nostrud exercitation ullamco </em>laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+  <!-- The strong tag above is a tag the makes the content within it bold -->
+  <!-- The em tag italicises the text above -->
+  <p>
+    Lorem ipsum dolor <a href="https://google.com" target="_blank">sit amet</a>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+  <!-- The 'a href' tag makes the content between the tags a clickable link -->
+  <!-- The 'href' part of the tag specifies what website we want this link to open -->
+  <!-- The 'target=' part of the tag makes sure to open the website in another tab -->
+
+  <!-- Lets work with lists -->
+  <!-- There are 2 types of lists, ordered and unordered -->
+  <!-- Lets work with unordered lists first (ul)-->
+  <ul>
+    <li>List Item 1</li>
+    <li>List Item 2</li>
+    <li>List Item 3</li>
+    <li>List Item 4</li>
+    <!-- li stands for 'list item' -->
+  </ul>
+
+  <ol>
+    <!-- ol gets rid of bullet points and is numbered instead -->
+    <li>List Item 1</li>
+    <li>List Item 2</li>
+    <li>List Item 3</li>
+    <li>List Item 4</li>
+  </ol>
+
+  <!-- Lets work with tables -->
+  <table>
+    <thead>
+      <!-- The above tag represents the header of the table -->
+      <tr>
+        <!-- The above tag represents the rows of the table -->\
+        <th>Name</th>
+        <th>Email</th>
+        <th>Age</th>
+        <!-- The above th tags represent the headings of this row -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Nishant Vyas</td>
+        <td>nvyas3095@gmail.com</td>
+        <td>22</td>
+        <!-- Now that we have our headings, we can put our data (hence the td tag) -->
+      </tr>
+      <tr>
+        <td>Noleen Prasad</td>
+        <td>nprasad@gmail.com</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td>Matt Sim</td>
+        <td>msim@gmail.com</td>
+        <td>22</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br>
+  <!-- This creates a line break to give some space between the tags -->
+  <hr>
+  <!-- This tag creates a horizontal line across the page -->
+
+  <!-- Lets work with forms -->
+  <form action="process.php" method="POST">
+    <div>
+      <!-- The div label just makes each tag have its own line of space -->
+      <label>First Name</label>
+      <input type="text" name="firstName" placeholder="Enter First Name">
+      <!-- The labe tag gives a name to the specific form -->
+      <!-- The input tag sprecifies the type of input for the form -->
+      <!-- The name attribute specifies the name for the input value used by the php file -->
+      <!-- The placeholder atribute puts a grayed out placeholder in the form -->
+    </div>
+    <br>
+    <div>
+      <label>Last Name</label>
+      <input type="text" name="lastName">
+    </div>
+    <br>
+    <div>
+      <label>Email</label>
+      <input type="email" name="email">
+      <!-- Notice how we use type 'email' for the email address -->
+    </div>
+    <br>
+    <div>
+      <label>Message</label>
+      <textarea name="message"></textarea>
+      <!-- For text boxes, we use the text area tag -->
+    </div>
+    <br>
+    <div>
+      <label>Gender</label>
+      <select name="gender">
+        <option value="male">Male</option>
+        <option value="male">Female</option>
+        <option value="male">Other</option>
+      </select>
+      <!-- We can also create select lists with the value of the options withi the options tag -->
+    </div>
+    <br>
+    <div>
+      <label>Age:</label>
+      <input type="number" name="age">
+    </div>
+    <br>
+    <div>
+      <label>Birthday</label>
+      <input type="date" name="birthday">
+    </div>
+    <br>
+    <input type="submit" name="submit" value="Submit">
+    <!-- At the end of each form there should be a submit button, which is what the above tag does -->
+  </form>
+  <!-- The action attribute submits the form to process.php -->
+  <!-- The method attribute declares the type of request we make to the server (in this case POST) -->
+
+  <!-- Lets work with Buttons -->
 </body>
 
 </html>
