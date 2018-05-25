@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- Lets make a blog website with a structured layout using semantic tags -->
+<html>
+
+<head>
+  <title>My Blog</title>
+    <!-- We will get into css styles later on but here are some basics -->
+    <!-- So we style the header of this page by using a hashtag with the id of the header -->
+    <!-- We align the text to the center, make the background color black, text color white, and add 10 pixels of padding -->
+  <meta name="description" content="Awesome blog by Nishant">
+  <meta name="keywords" content="web design blog, web dev blog">
+  <!-- These meta tags will help when google scan your website -->
+  <style>
+    #main-header{
+      text-align: center;
+      background-color: black;
+      color:white;
+      padding:10px;
+    }
+
+    #main-footer{
+      text-align: center;
+      font-size:18px;
+    }
+  </style>
+</head>
+
+<body>
+  <header id="main-header">
+    <h1>My Website</h1>
+  </header>
+
+  <a href="index.html">Go to index</a>
+  <!-- The above tag will link back to our index page -->
+  <section>
+    <!-- Works similar to a div tag -->
+    <article class="post">
+      <!-- Works similar to a textarea -->
+      <h3>Blog Post One</h3>
+      <small>Posted by Nishant on May 25</small>
+      <!-- The small tag just makes the font smaller -->
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <a href="post.html">Read More</a>
+    </article>
+
+    <article class="post">
+      <h3>Blog Post Two</h3>
+      <small>Posted by Nishant on May 25</small>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <a href="post.html">Read More</a>
+    </article>
+
+    <article class="post">
+      <h3>Blog Post Three</h3>
+      <small>Posted by Nishant on May 25</small>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <a href="post.html">Read More</a>
+    </article>
+  </section>
+
+  <aside>
+    <!-- The aside tag allows for a side bar to be placed -->
+    <!-- Wont see it on the side because a css file is not associated with this html page -->
+    <h3>Categories</h3>
+    <nav>
+      <ul>
+        <li><a href="#">Category 1</a></li>
+        <li><a href="#">Category 2</a></li>
+        <li><a href="#">Category 3</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <footer id="main-footer">
+  <!-- The footer tag allows us to add content that will always stay at the bottom of the page -->
+    <p>Copyright &copy; 2018, My Website</p>
+  </footer>
+</body>
+
+</html>
