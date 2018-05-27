@@ -1,3 +1,22 @@
-h3{
-  color:green; /* Makes the font color for all h3s to green */
+body{
+  background-color: #f4f4f4; /* Changes the background color to light grey */
+  color: #55555; /* Changes the color of the text to a dark grey */
+  font-family: Arial, Helvetica, sans-serif;
+  /* Changes the font to Arial. The rest of the fonts are if the preceding font is not available */
+  font-size: 16px; /* Changes the font size */
+  font-weight: normal; /* Boldness of the font */
+
+  /* Above declarations equivalent to
+  'font: normal 16px Arial, Helvetica, sans serif' */
+  line-height: 1.6em; /* Leaves more space in between the lines */
+
 }
+/* The above is a declaration for styling for the body tag */
+/* There are many different ways to declare colors in CSS */
+/* Color names, Hexadecimals, and RGB*/
+
+.box-1{
+
+}
+/* The above declaration is for styling the div that is of class 'box-1' */
+/* Notice how we use '.' before the class name in css style sheets */
