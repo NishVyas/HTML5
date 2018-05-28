@@ -1,3 +1,11 @@
+/*
+*{
+  margin: 0;
+  padding: 0;
+}
+*/
+/* The above is a declaration for EVERY tag and resets the padding and margin */
+
 body{
   background-color: #f4f4f4; /* Changes the background color to light grey */
   color: #55555; /* Changes the color of the text to a dark grey */
@@ -9,14 +17,39 @@ body{
   /* Above declarations equivalent to
   'font: normal 16px Arial, Helvetica, sans serif' */
   line-height: 1.6em; /* Leaves more space in between the lines */
-
+  margin: 0; /* The margins of the body is pushed to the edge */
 }
 /* The above is a declaration for styling for the body tag */
 /* There are many different ways to declare colors in CSS */
 /* Color names, Hexadecimals, and RGB*/
 
-.box-1{
+.container{
+  width: 500px;
+  margin: auto;
+}
+/* We can create an arbitrary class to add to any tag in the html file */
 
+.box-1{
+  background-color: #333333; /* Sets background color to dark grey */
+  color: #ffffff;
+
+  border-right: 5px red solid; /* Sets the size, color, and style of the right border to 5px, red, and solid */
+  border-left: 5px red solid;
+  border-top: 5px red solid;
+  border-bottom: 5px red solid;
+  /* The above is equivalent to 'border: 5px red solid;' since all sides have the same size, color, and style */
+
+  border-width: 3px;
+  border-bottom-width: 10px;
+  border-top-style: dotted;
+  /* A you can see, you can customize all four sides of a box */
+
+  border: 5px red solid;
+  /* Having this below all the other decalrations overwrites the ones above this one */
+
+  padding: 20px; /*Adds some padding to all 4 sides (pushes content down by 20 px) */
+  margin: 20px; /* Increases margin of the box by 20 pixels (makes box skinnier) */
+  
 }
 /* The above declaration is for styling the div that is of class 'box-1' */
 /* Notice how we use '.' before the class name in css style sheets */
