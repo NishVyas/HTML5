@@ -49,7 +49,25 @@ body{
 
   padding: 20px; /*Adds some padding to all 4 sides (pushes content down by 20 px) */
   margin: 20px; /* Increases margin of the box by 20 pixels (makes box skinnier) */
-  
+
 }
 /* The above declaration is for styling the div that is of class 'box-1' */
 /* Notice how we use '.' before the class name in css style sheets */
+
+.box-1 h1{
+  font-family: Tahoma;
+  font-weight: 800;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  word-spacing: 1em;
+  /* All customization for h1 (pretty self-explanatory) */
+}
+/* The above declaration is for styling any h1 THATS IN the box-1 class */
+
+.box-2{
+  border: 3px dotted #cccccc;
+  padding: 20px;
+  margin: 20px 0;
+}
