@@ -174,3 +174,55 @@ a:visited{
 /* The above two declarations show how we can have different divs taking up a different amount of space using float and width */
 /* main-block floats right and sidebar flaots left with 70% and 30% eidth respectively */
 /* It takes up a lot less space on the page By being side by side instead of one on top of the other */
+
+.p-box{
+  width: 800px;
+  height: 500px;
+  border: 1px solid #000000;
+  margin-top: 30px;
+  position: relative;
+  background-image: url('../images/bgimage.jpg'); /* Load image into background of p-box */
+  background-repeat: no-repeat; /* If the image moves past the border, it doesnt repeat on the other side */
+  background-position: 100px 200px; /* Just moves the background image */
+  background-position: center center; /* Centers the image horizontally and vertically */
+}
+
+.p-box h1{
+  position: absolute;
+  top: 40px;
+  left: 200px;
+}
+/* The above will move the 'h1' in the p-box class 40 pixels down from the top IF THE p-box DECLARATION ABOVE DOESN'T HAVE RELATIVE POSITIONING */
+/* So AS LONG AS THE PARENT CLASS HAS RELATIVE POSITIONING, we can use absolute positiong and move our heading RELATIVE to the parent class */
+
+.p-box h2{
+  position:absolute;
+  bottom: 40px;
+  right: 100px;
+}
+
+.fix-me{
+  position:fixed;
+  top: 400px;
+}
+/* The above fixes the 'fix-me' class 400 pixels from the top in a fixed position */
+/* So whenever you scroll, everything associated with that class will stay 400 pixels form the top */
+
+.my-list li:first-child{
+  background: red;
+}
+/* Targets first list item and changes the background red */
+
+.my-list li:last-child{
+  background: blue;
+}
+/* Targets the last list item and changes the background blue */
+
+.my-list li:nth-child(5){
+  background: yellow;
+}
+/* Targets the fisth element and changes the background yellow */
+
+.my-list li:nth-child(even){
+  background: grey;
+}
