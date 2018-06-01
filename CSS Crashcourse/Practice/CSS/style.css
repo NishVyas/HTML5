@@ -38,7 +38,7 @@ a:active{
 /* The above is during the action of a click on a link (applies for all links) */
 
 a:visited{
-  color: black;
+
 }
 /* The above is for after you have clicked a link (applies for all links) */
 
@@ -47,6 +47,24 @@ a:visited{
   margin: auto;
 }
 /* We can create an arbitrary class to add to any tag in the html file */
+
+.button{
+  background-color: #333333;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+}
+
+.button:hover{
+  background: red;
+  color: #ffffff;
+}
+/* Stlye setting for ANY button class when you hover over the button */
+
+.clr{
+  clear:both;
+}
+/* The above makes sure to clear any floats */
 
 .box-1{
   background-color: #333333; /* Sets background color to dark grey */
@@ -110,5 +128,49 @@ a:visited{
 .categories li{
   padding-bottom: 8px;
   border-bottom: dotted 1px #333333;
-  list-style-image: url('../images/check.png');
 }
+
+.my-form{
+  padding: 20px;
+}
+
+.my-form .form-group{
+  padding-bottom: 15px;
+}
+
+.my-form label{
+  display: block; /* Puts the labels on their own lines */
+}
+
+.my-form input[type="text"], .my-form textarea{
+  padding: 8px;
+  width: 100%;
+}
+/* The '[type = text]' part makes sure to only change the text area box and not the submit button as well */
+
+.block{
+  float:left; /*'Floats' all block classes to the left */
+  width: 33.3%; /* Since there are three divs with this class and we want them next to each other, we use a width of 33.3% */
+  border: 1px solid #cccccc;
+  padding: 10px;
+  box-sizing: border-box; /* Makes sure that the padding is not added WITH the border causeing the blocks to not be side by side */
+}
+
+#main-block{
+  float: left;
+  width: 70%;
+  padding:15px;
+  box-sizing:border-box;
+}
+
+#sidebar{
+  float: right;
+  width: 30%;
+  background-color: #333333;
+  color: #ffffff;
+  padding:15px;
+  box-sizing:border-box;
+}
+/* The above two declarations show how we can have different divs taking up a different amount of space using float and width */
+/* main-block floats right and sidebar flaots left with 70% and 30% eidth respectively */
+/* It takes up a lot less space on the page By being side by side instead of one on top of the other */
