@@ -4,94 +4,110 @@
   padding: 0;
 }
 */
+
 /* The above is a declaration for EVERY tag and resets the padding and margin */
 
-body{
-  background-color: #f4f4f4; /* Changes the background color to light grey */
-  color: #55555; /* Changes the color of the text to a dark grey */
+body {
+  background-color: #f4f4f4;
+  /* Changes the background color to light grey */
+  color: #55555;
+  /* Changes the color of the text to a dark grey */
   font-family: Arial, Helvetica, sans-serif;
   /* Changes the font to Arial. The rest of the fonts are if the preceding font is not available */
-  font-size: 16px; /* Changes the font size */
-  font-weight: normal; /* Boldness of the font */
-
+  font-size: 16px;
+  /* Changes the font size */
+  font-weight: normal;
+  /* Boldness of the font */
   /* Above declarations equivalent to
   'font: normal 16px Arial, Helvetica, sans serif' */
-  line-height: 1.6em; /* Leaves more space in between the lines */
-  margin: 0; /* The margins of the body is pushed to the edge */
+  line-height: 1.6em;
+  /* Leaves more space in between the lines */
+  margin: 0;
+  /* The margins of the body is pushed to the edge */
 }
+
 /* The above is a declaration for styling for the body tag */
+
 /* There are many different ways to declare colors in CSS */
+
 /* Color names, Hexadecimals, and RGB*/
 
-a{
-  text-decoration: none; /* Gets rid of the link's underline */
+a {
+  text-decoration: none;
+  /* Gets rid of the link's underline */
   color: #000000;
 }
 
-a:hover{
+a:hover {
   color: red;
 }
+
 /* The above is for whenever your mouse hovers over a link (applies for all links) */
-a:active{
+
+a:active {
   color green;
 }
+
 /* The above is during the action of a click on a link (applies for all links) */
 
-a:visited{
+a:visited {}
 
-}
 /* The above is for after you have clicked a link (applies for all links) */
 
-.container{
+.container {
   width: 500px;
   margin: auto;
 }
+
 /* We can create an arbitrary class to add to any tag in the html file */
 
-.button{
+.button {
   background-color: #333333;
   color: #ffffff;
   padding: 10px 15px;
   border: none;
 }
 
-.button:hover{
+.button:hover {
   background: red;
   color: #ffffff;
 }
+
 /* Stlye setting for ANY button class when you hover over the button */
 
-.clr{
-  clear:both;
+.clr {
+  clear: both;
 }
+
 /* The above makes sure to clear any floats */
 
-.box-1{
-  background-color: #333333; /* Sets background color to dark grey */
+.box-1 {
+  background-color: #333333;
+  /* Sets background color to dark grey */
   color: #ffffff;
-
-  border-right: 5px red solid; /* Sets the size, color, and style of the right border to 5px, red, and solid */
+  border-right: 5px red solid;
+  /* Sets the size, color, and style of the right border to 5px, red, and solid */
   border-left: 5px red solid;
   border-top: 5px red solid;
   border-bottom: 5px red solid;
   /* The above is equivalent to 'border: 5px red solid;' since all sides have the same size, color, and style */
-
   border-width: 3px;
   border-bottom-width: 10px;
   border-top-style: dotted;
   /* A you can see, you can customize all four sides of a box */
-
   border: 5px red solid;
   /* Having this below all the other decalrations overwrites the ones above this one */
-
-  padding: 20px; /*Adds some padding to all 4 sides (pushes content down by 20 px) */
-  margin: 20px; /* Increases margin of the box by 20 pixels (makes box skinnier) */
-
+  padding: 20px;
+  /*Adds some padding to all 4 sides (pushes content down by 20 px) */
+  margin: 20px;
+  /* Increases margin of the box by 20 pixels (makes box skinnier) */
 }
+
 /* The above declaration is for styling the div that is of class 'box-1' */
+
 /* Notice how we use '.' before the class name in css style sheets */
 
-.box-1 h1{
+.box-1 h1 {
   font-family: Tahoma;
   font-weight: 800;
   font-style: italic;
@@ -101,128 +117,152 @@ a:visited{
   word-spacing: 1em;
   /* All customization for h1 (pretty self-explanatory) */
 }
+
 /* The above declaration is for styling any h1 THATS IN the box-1 class */
 
-.box-2{
+.box-2 {
   border: 3px dotted #cccccc;
   padding: 20px;
   margin: 20px 0;
 }
 
-.categories{
+.categories {
   border: 1px #cccccc solid;
   padding: 10px;
-  border-radius: 15px; /* This makes the border more rounded */
+  border-radius: 15px;
+  /* This makes the border more rounded */
 }
 
-.categories h2{
-  text-align: center; /* Aligns our heading to the center */
+.categories h2 {
+  text-align: center;
+  /* Aligns our heading to the center */
 }
 
-.categories ul{
+.categories ul {
   padding: 0;
-  list-style: square; /* Changes bullet points to squares */
-  list-style: none; /* Gets rid of bullet points completely */
+  list-style: square;
+  /* Changes bullet points to squares */
+  list-style: none;
+  /* Gets rid of bullet points completely */
 }
 
-.categories li{
+.categories li {
   padding-bottom: 8px;
   border-bottom: dotted 1px #333333;
 }
 
-.my-form{
+.my-form {
   padding: 20px;
 }
 
-.my-form .form-group{
+.my-form .form-group {
   padding-bottom: 15px;
 }
 
-.my-form label{
-  display: block; /* Puts the labels on their own lines */
+.my-form label {
+  display: block;
+  /* Puts the labels on their own lines */
 }
 
-.my-form input[type="text"], .my-form textarea{
+.my-form input[type="text"], .my-form textarea {
   padding: 8px;
   width: 100%;
 }
+
 /* The '[type = text]' part makes sure to only change the text area box and not the submit button as well */
 
-.block{
-  float:left; /*'Floats' all block classes to the left */
-  width: 33.3%; /* Since there are three divs with this class and we want them next to each other, we use a width of 33.3% */
+.block {
+  float: left;
+  /*'Floats' all block classes to the left */
+  width: 33.3%;
+  /* Since there are three divs with this class and we want them next to each other, we use a width of 33.3% */
   border: 1px solid #cccccc;
   padding: 10px;
-  box-sizing: border-box; /* Makes sure that the padding is not added WITH the border causeing the blocks to not be side by side */
+  box-sizing: border-box;
+  /* Makes sure that the padding is not added WITH the border causeing the blocks to not be side by side */
 }
 
-#main-block{
+#main-block {
   float: left;
   width: 70%;
-  padding:15px;
-  box-sizing:border-box;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
-#sidebar{
+#sidebar {
   float: right;
   width: 30%;
   background-color: #333333;
   color: #ffffff;
-  padding:15px;
-  box-sizing:border-box;
+  padding: 15px;
+  box-sizing: border-box;
 }
+
 /* The above two declarations show how we can have different divs taking up a different amount of space using float and width */
+
 /* main-block floats right and sidebar flaots left with 70% and 30% eidth respectively */
+
 /* It takes up a lot less space on the page By being side by side instead of one on top of the other */
 
-.p-box{
+.p-box {
   width: 800px;
   height: 500px;
   border: 1px solid #000000;
   margin-top: 30px;
   position: relative;
-  background-image: url('../images/bgimage.jpg'); /* Load image into background of p-box */
-  background-repeat: no-repeat; /* If the image moves past the border, it doesnt repeat on the other side */
-  background-position: 100px 200px; /* Just moves the background image */
-  background-position: center center; /* Centers the image horizontally and vertically */
+  background-image: url('../images/bgimage.jpg');
+  /* Load image into background of p-box */
+  background-repeat: no-repeat;
+  /* If the image moves past the border, it doesnt repeat on the other side */
+  background-position: 100px 200px;
+  /* Just moves the background image */
+  background-position: center center;
+  /* Centers the image horizontally and vertically */
 }
 
-.p-box h1{
+.p-box h1 {
   position: absolute;
   top: 40px;
   left: 200px;
 }
+
 /* The above will move the 'h1' in the p-box class 40 pixels down from the top IF THE p-box DECLARATION ABOVE DOESN'T HAVE RELATIVE POSITIONING */
+
 /* So AS LONG AS THE PARENT CLASS HAS RELATIVE POSITIONING, we can use absolute positiong and move our heading RELATIVE to the parent class */
 
-.p-box h2{
-  position:absolute;
+.p-box h2 {
+  position: absolute;
   bottom: 40px;
   right: 100px;
 }
 
-.fix-me{
-  position:fixed;
+.fix-me {
+  position: fixed;
   top: 400px;
 }
+
 /* The above fixes the 'fix-me' class 400 pixels from the top in a fixed position */
+
 /* So whenever you scroll, everything associated with that class will stay 400 pixels form the top */
 
-.my-list li:first-child{
+.my-list li:first-child {
   background: red;
 }
+
 /* Targets first list item and changes the background red */
 
-.my-list li:last-child{
+.my-list li:last-child {
   background: blue;
 }
+
 /* Targets the last list item and changes the background blue */
 
-.my-list li:nth-child(5){
+.my-list li:nth-child(5) {
   background: yellow;
 }
+
 /* Targets the fisth element and changes the background yellow */
 
-.my-list li:nth-child(even){
+.my-list li:nth-child(even) {
   background: grey;
 }
