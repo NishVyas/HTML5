@@ -12,3 +12,72 @@ body{
   margin: 0;
   background-color: #f4f4f4;
 }
+
+/* Just a remainder that the dot is used to reference classes and the hashtag is used to reference ids */
+/* All global styling */
+.container{
+  width: 80%;
+  /* The below will send all divs of class container to the middle */
+  margin: auto;
+  /* For the below line, If something goes outside the div, the scroll bar will not appear in browser and the content will be hidden */
+  overflow: hidden;
+
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+/* I want all all unordered lists on this page to have padding and margins at 0 */
+
+/* Header */
+header{
+  background: #35424a;
+  /* Dark background, so white text needed */
+  color: #ffffff;
+  /* Note: the above line will not change the color of the text of the links since those have to be changed seperately */
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #e8491d 3px solid;
+}
+
+header a{
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+/* The above declaration changes color of the link to white, gets rid of the underlines, makes text uppercase, and changes font size to 16 pixels */
+
+header li{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+  /* The above is for padding on the right and the left respectively. */
+}
+
+header #branding{
+  float: left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight, header .current a{
+  color: #e8491d;
+  font-weight: bold;
+}
+/* The above declaration makes the text color orange and bold for both the class of 'highlight'
+   in the header tag AND the links in the class 'current' for the header tag */
+
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+/* The above declaration sets the text color of the link as a light grey and boldens it during a hover state */
