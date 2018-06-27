@@ -1,0 +1,14 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  /* Amount of space between each line */
+  line-height: 1.5;
+
+  /* The below line is equivalent to the above three lines
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  */
+  padding: 0;
+  /* Note: the content in h1 WILL have padding on the top and bottom since h1 by default has padding */
+  margin: 0;
+  background-color: #f4f4f4;
+}
