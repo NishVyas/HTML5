@@ -99,7 +99,7 @@ header a:hover{
 /* Showcase */
 #showcase{
   min-height: 400px;
-  background: url('../images/showcase.jpg') no-repeat;
+  background: url('../images/showcase.jpg') no-repeat -900px -200px;
   /* The above makes sure the image doesnt repeat if it overflows and moves the image UP by 150 pixels */
   text-align: center;
   color: #ffffff;
