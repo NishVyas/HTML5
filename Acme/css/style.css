@@ -91,11 +91,6 @@ header a:hover{
 }
 /* The above declaration sets the text color of the link as a light grey and boldens it during a hover state */
 
-/* Logos */
-.box img{
-  height: 100px;
-}
-
 /* Showcase */
 #showcase{
   min-height: 400px;
@@ -115,6 +110,7 @@ header a:hover{
   font-size: 20px;
 }
 
+/* Newsletter */
 #newsletter{
   padding: 15px;
   color: #ffffff;
@@ -136,3 +132,28 @@ header a:hover{
   width: 250px;
 }
 /* The above sets the style of the input of type "email" (hence the square brackets that CSS3 allows us to do) in the newsletter form */
+
+/* Boxes */
+#boxes{
+  margin-top: 20px;
+}
+
+#boxes .box{
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Logos */
+#boxes .box img{
+  width: 100px;
+}
+
+footer{
+  padding: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: #e8491d;
+  text-align: center;
+}
